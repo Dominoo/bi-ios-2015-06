@@ -13,6 +13,9 @@
 		B47A955F1C04519B003E278C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47A955D1C04519B003E278C /* Main.storyboard */; };
 		B47A95611C04519B003E278C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47A95601C04519B003E278C /* Assets.xcassets */; };
 		B47A95641C04519B003E278C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47A95621C04519B003E278C /* LaunchScreen.storyboard */; };
+		B47A956C1C045DCF003E278C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A956B1C045DCF003E278C /* CollectionViewController.swift */; };
+		B47A956E1C0460DD003E278C /* bageta.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A956D1C0460DD003E278C /* bageta.png */; };
+		B47A95701C04669E003E278C /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A956F1C04669E003E278C /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B47A95601C04519B003E278C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47A95631C04519B003E278C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B47A95651C04519B003E278C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47A956B1C045DCF003E278C /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B47A956D1C0460DD003E278C /* bageta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bageta.png; path = ../../../../../Desktop/bageta.png; sourceTree = "<group>"; };
+		B47A956F1C04669E003E278C /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		C01E12835A79A6A7A6F2EE41 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F160762875C094A373D002AB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,8 +79,11 @@
 				B47A955B1C04519B003E278C /* ViewController.swift */,
 				B47A955D1C04519B003E278C /* Main.storyboard */,
 				B47A95601C04519B003E278C /* Assets.xcassets */,
+				B47A956D1C0460DD003E278C /* bageta.png */,
 				B47A95621C04519B003E278C /* LaunchScreen.storyboard */,
 				B47A95651C04519B003E278C /* Info.plist */,
+				B47A956B1C045DCF003E278C /* CollectionViewController.swift */,
+				B47A956F1C04669E003E278C /* MapController.swift */,
 			);
 			path = "bi-ios-map";
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B47A95641C04519B003E278C /* LaunchScreen.storyboard in Resources */,
+				B47A956E1C0460DD003E278C /* bageta.png in Resources */,
 				B47A95611C04519B003E278C /* Assets.xcassets in Resources */,
 				B47A955F1C04519B003E278C /* Main.storyboard in Resources */,
 			);
@@ -210,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47A95701C04669E003E278C /* MapController.swift in Sources */,
+				B47A956C1C045DCF003E278C /* CollectionViewController.swift in Sources */,
 				B47A955C1C04519B003E278C /* ViewController.swift in Sources */,
 				B47A955A1C04519B003E278C /* AppDelegate.swift in Sources */,
 			);
