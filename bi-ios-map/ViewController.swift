@@ -64,6 +64,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 let alert = createAlertController()
                 self.presentViewController(alert, animated: true, completion: nil)
                 
+            case 1:
+                self.navigationController?.pushViewController(MapController(), animated: true)
+                
                /* let mv = MapViewController()
                 self.navigationController?.pushViewController(mv, animated: true)*/
                 
