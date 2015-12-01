@@ -52,6 +52,7 @@ class CollectionViewController : UIViewController,UICollectionViewDataSource,UIC
      func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         
+        
         let cell = collection!.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
         cell.backgroundColor = .whiteColor()
         

@@ -43,8 +43,8 @@ class MapController : UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.manager.distanceFilter = kCLDistanceFilterNone
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
         self.manager.startUpdatingLocation()
-      
         
+      
        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Search", style: UIBarButtonItemStyle.Plain, target: self, action: "search:")
         
        
@@ -59,6 +59,9 @@ class MapController : UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        print (newLocation)
+    }
     
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
         let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
@@ -86,9 +89,11 @@ class MapController : UIViewController, MKMapViewDelegate, CLLocationManagerDele
         pin?.leftCalloutAccessoryView = UISwitch()
         
 
-        
         return pin;
     }
+    
+    
+    
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         print("ahoj")

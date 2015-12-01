@@ -66,6 +66,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 
             case 1:
                 self.navigationController?.pushViewController(MapController(), animated: true)
+            case 2:
+                self.navigationController?.pushViewController(AutoLayout(), animated: true)
                 
                /* let mv = MapViewController()
                 self.navigationController?.pushViewController(mv, animated: true)*/

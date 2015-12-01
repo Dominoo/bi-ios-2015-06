@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6FAE6A6DBFEE6D335FD0D59E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F160762875C094A373D002AB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B431CBB31C0D81CD0067112B /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B431CBB21C0D81CD0067112B /* AutoLayout.swift */; };
 		B47A955A1C04519B003E278C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A95591C04519B003E278C /* AppDelegate.swift */; };
 		B47A955C1C04519B003E278C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A955B1C04519B003E278C /* ViewController.swift */; };
 		B47A955F1C04519B003E278C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47A955D1C04519B003E278C /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		7BF4482E342C871DB0CF59E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B431CBB21C0D81CD0067112B /* AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
 		B47A95561C04519B003E278C /* bi-ios-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bi-ios-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47A95591C04519B003E278C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47A955B1C04519B003E278C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				B47A95651C04519B003E278C /* Info.plist */,
 				B47A956B1C045DCF003E278C /* CollectionViewController.swift */,
 				B47A956F1C04669E003E278C /* MapController.swift */,
+				B431CBB21C0D81CD0067112B /* AutoLayout.swift */,
 			);
 			path = "bi-ios-map";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				B47A95701C04669E003E278C /* MapController.swift in Sources */,
 				B47A956C1C045DCF003E278C /* CollectionViewController.swift in Sources */,
 				B47A955C1C04519B003E278C /* ViewController.swift in Sources */,
+				B431CBB31C0D81CD0067112B /* AutoLayout.swift in Sources */,
 				B47A955A1C04519B003E278C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
