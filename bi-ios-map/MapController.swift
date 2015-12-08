@@ -37,14 +37,19 @@ class MapController : UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     override func viewDidLoad() {
         
+        switch CLLocationManager.authorizationStatus() {
+        case .NotDetermined:     self.manager.requestWhenInUseAuthorization()
+            
+        default: print("ahoj")
+        }
+
         
-        self.manager.requestWhenInUseAuthorization()
         self.manager.delegate = self
         self.manager.distanceFilter = kCLDistanceFilterNone
         self.manager.desiredAccuracy = kCLLocationAccuracyBest
         self.manager.startUpdatingLocation()
         
-      
+        
        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Search", style: UIBarButtonItemStyle.Plain, target: self, action: "search:")
         
        
@@ -82,6 +87,8 @@ class MapController : UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if (pin == nil) {
             pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "myPin")
         }
+        
+        pin?.image = UIImage(named: "bageta")
         
         pin?.animatesDrop = true
         pin?.draggable = true
